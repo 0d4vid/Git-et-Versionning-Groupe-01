@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Groupe N° 01</title>
+  <style>
+    :root{
+      --sidebar-width: 260px;
+      --bg-main: #f1f2f4; /* very light gray background of main area */
+      --sidebar-bg: #ffffff; /* sidebar white */
+      --muted: #6b7280;
+      --accent: #2b78ff; /* blue accent */
+      --card-bg: #ffffff;
+      --radius: 12px;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}html,body,#root{height:100%}body{
+      background:var(--bg-main);
+      color:#111827;
+      font-size:15px;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }/* Layout */.app{display:flex;min-height:100vh}/* Sidebar */.sidebar{
+      width:var(--sidebar-width);
+      background:var(--sidebar-bg);
+      border-right:1px solid rgba(20,20,20,0.03);
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      padding:22px 18px;
+    }.logo{display:flex;align-items:center;gap:12px;padding-bottom:14px}.logo-box{
+      width:28px;height:28px;border-radius:6px;background:linear-gradient(180deg,#3b82f6,#2563eb);
+      box-shadow: 0 2px 6px rgba(37,99,235,0.12);
+    }.brand{font-weight:700;font-size:16px;color:#0f172a}/* Menu */.menu ul{list-style:none;margin-top:8px}.menu-item{
+      padding:14px 12px;
+      border-radius:8px;
+      margin-bottom:8px;
+      color:#334155;
+      font-weight:600;
+      letter-spacing:0.02em;
+      cursor:pointer;
+    }.menu-item:hover{background:#f3f4f6}.menu-item.active{
+      background:rgba(43,120,255,0.12);
+      color:var(--accent);
+      box-shadow: inset 0 0 0 1px rgba(43,120,255,0.06);
+    }/* sidebar footer */.sidebar-footer{font-size:13px;color:#6b7280;padding:10px 4px;border-top:1px solid rgba(20,20,20,0.03);margin-top:18px}.sidebar-footer .back{display:inline-flex;align-items:center;gap:8px}/* Main area */.main{flex:1;display:flex;flex-direction:column;min-height:100vh}/* Topbar */.topbar{
+      height:64px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 28px;
+      background:transparent;
+      border-bottom:1px solid rgba(15,23,42,0.03);
+    }.group-title{
+      font-weight:700;color:#1e3a8a;letter-spacing:0.02em;
+    }.top-right{display:flex;align-items:center;gap:18px}.icon-btn{
+      background:transparent;border:0;padding:8px;border-radius:8px;cursor:pointer;
+    }.icon-btn:hover{background:rgba(15,23,42,0.02)}/* profile */.profile{display:flex;align-items:center;gap:12px}.profile img{
+      width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid #fff;box-shadow:0 1px 0 rgba(2,6,23,0.06);
+    }.profile-info{font-size:12px;line-height:1}.profile-info .name{font-weight:700}.profile-info .email{color:var(--muted);font-weight:500}/* Content */.content{padding:28px;flex:1;display:flex;flex-direction:column}.card{
+      background:var(--card-bg);
+      padding:26px 28px;
+      width:86%;
+      max-width:980px;
+      border-radius:12px;
+      box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+      border:1px solid rgba(2,6,23,0.03);
+    }.card h1{font-size:24px;margin-bottom:8px}.card p{color:var(--muted);font-size:15px}/* spacer to make large empty area like in screenshot */.spacer{flex:1}/* Footer at bottom of content area */.page-footer{
+      text-align:center;color:#9aa0a6;font-size:13px;margin-top:30px;padding-bottom:18px;
+    }/* small responsive tweaks */@media (max-width:900px){
+      .sidebar{display:none}
+      .card{width:100%}
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-box"></div>
+        <div class="brand">Dashboard</div>
+      </div>
+
+      <nav class="menu">
+        <ul>
+       <a  href="#" class="nav-ite">
+            <li class="menu-item active">DJOMNANG</li>
+        </a>
+       <a  href="dague.html" class="nav-ite">
+            <li class="menu-item" >DAGUE</li>
+        </a>
+       <a  href="mengue.html" class="nav-ite">
+            <li class="menu-item">NONAGNI</li>
+        </a>
+       <a  href="index.html" class="nav-ite">
+            <li class="menu-item">KENFACK</li>
+        </a>
+        <a  href="index.html" class="nav-ite">
+            <li class="menu-item">NJIOGAP</li>
+        </a>
+        </ul>
+      </nav>
+
+     
+       <a  href="index.html" class="nav-item">
+                 <span class="back" >⟲ Retour page principale</span>
+        </a>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="group-title">GROUPE N° 01</div>
+
+        <div class="top-right">
+          <button class="icon-btn" aria-label="notifications">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M15 17H9m-3-3V11a6 6 0 1 1 12 0v3m-4 5a2 2 0 0 1-4 0" stroke="#6b7280" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <div class="profile">
+            <span>👩🏾‍💼</span>
+            <div class="profile-info">
+              <div class="name">DJOMNANG</div>
+              <div class="email">joycedjomnang@gmail.com</div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="card">
+          <h1>Page de DJOMNANG</h1>
+          <p>Ceci est la page de DJOMNANG.</p>
+        </div>
+
+        <div class="spacer"></div>
+
+        <footer class="page-footer">
+          Copyright tous droits réservés Groupe N° 01
+        </footer>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    // petit script pour gérer l'activation des éléments du menu
+    document.addEventListener('DOMContentLoaded', function () {
+      const items = document.querySelectorAll('.menu-item');
+      items.forEach(it => {
+        it.addEventListener('click', () => {
+          items.forEach(i => i.classList.remove('active'));
+          it.classList.add('active');
+          // changer titre de la carte pour ressembler à l'image
+          const cardTitle = document.querySelector('.card h1');
+          const cardPara = document.querySelector('.card p');
+          cardTitle.textContent = 'Page de ' + it.textContent;
+          cardPara.textContent = 'Ceci est la page de ' + it.textContent + '.';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
